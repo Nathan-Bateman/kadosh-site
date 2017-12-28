@@ -1,0 +1,43 @@
+/*font sizes*/
+body {
+	font-family: 'Montserrat';
+	font-size: 16px;
+}
+h1 {
+	font-family: 'Oswald';
+	font-size: 36px;
+}
+h2 {
+	font-family: 'Oswald';
+	font-size: 32px;
+}
+h3 {
+	font-family: 'Oswald';
+	font-size: 28px;
+}
+h4 {
+	font-family: 'Oswald';
+	font-size: 24px;
+}
+h5 {
+	font-family: 'Oswald';
+	font-size: 18px;
+}
+h6 {
+	font-family: 'Oswald';
+	font-size: 16px;
+}
+p {
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-weight: 300;
+}
+/*colors*/
+$primary: #3366FF;
+$primary_opacity: rgba(51, 102, 255, 0.05);
+$primary_light: #3A71CE;
+$secondary: #FF4319;
+$secondary_light: #F7931D;
+$div_background_blue: #456FB5;
+$paragraph_blue: #4B68B0;
+$green_loud: #85CC14;

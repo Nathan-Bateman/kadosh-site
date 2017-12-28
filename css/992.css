@@ -1,0 +1,10 @@
+@media (min-width: 992px) {
+  /*contact*/
+  #contact .row-container {
+    position: relative; }
+  #contact .contact-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); } }
