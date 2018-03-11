@@ -11472,13 +11472,17 @@ function toggleWork () {
 
 	}
 }
-
+//slickNave Menu
+$(function(){
+		$('#nav-small').slicknav();
+	});
+//scroll to contact section of site - initiated by onClick data attribut
 function scrollContact () {
 	$('html, body').animate({
 	    scrollTop: ($('#contact').offset().top)
 	},500);
 }
-
+//KO View Model
 var kadoshViewModel = function () {
 	var self = this;
 		self.oneActive = ko.observable(true);

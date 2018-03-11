@@ -1,4 +1,9 @@
 @media (min-width: 992px) {
+  /*header*/
+  .slicknav_menu {
+    /*display: none;*/ }
+  header #nav-big {
+    /*display: block;*/ }
   /*contact*/
   #contact .row-container {
     position: relative; }

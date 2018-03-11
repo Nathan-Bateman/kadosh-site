@@ -1,5 +1,14 @@
 @media (min-width: 992px) {
+	/*header*/
+	.slicknav_menu {
+			/*display: none;*/
+		}
+	header {
+		#nav-big {
+			/*display: block;*/
+		}
 
+	}
 	/*contact*/
 	#contact {
 		.row-container {
@@ -12,8 +21,7 @@
 			    top: 50%;
 			    left: 50%;
 			    -webkit-transform: translateY(-50%);
-			    transform: translateY(-50%);
-			   
+			    transform: translateY(-50%);	   
 		}
 	}
 	#process {

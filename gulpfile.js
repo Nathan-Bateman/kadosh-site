@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 //Scripts Task
 //////////////// Grabs all .js files and pipes them out to a destination
 gulp.task('concatscripts', function(){
-	return gulp.src([ 'js/jQuery.js','js/knockout-3.3.0.js','js/bootstrap.js','js/jquery.slicknav.min.js','js/main.js'])
+	return gulp.src([ 'js/jQuery.js','js/knockout-3.3.0.js','js/bootstrap.js','js/slicknav.js','js/main.js'])
 	.pipe(plumber())
     .pipe(concat('final.js'))
 	.pipe(gulp.dest('js'))
