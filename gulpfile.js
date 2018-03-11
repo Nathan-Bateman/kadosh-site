@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 //Scripts Task
 //////////////// Grabs all .js files and pipes them out to a destination
 gulp.task('concatscripts', function(){
-	return gulp.src([ 'js/jQuery.js','js/knockout-3.3.0.js','js/bootstrap.js' ,'js/main.js'])
+	return gulp.src([ 'js/jQuery.js','js/knockout-3.3.0.js','js/bootstrap.js','js/jquery.slicknav.min.js','js/main.js'])
 	.pipe(plumber())
     .pipe(concat('final.js'))
 	.pipe(gulp.dest('js'))
@@ -61,7 +61,7 @@ gulp.task('sass', function () {
 //Concat Styles Task
 /////////////
 gulp.task('concatcss', function() {
-    gulp.src(['css/bootstrap.css','css/small.css','css/320.css','css/480.css','css/600.css','css/768.css','css/992.css','css/1280.css','css/big.css'])
+    gulp.src(['css/bootstrap.css','css/slicknav.min.css','css/small.css','css/320.css','css/480.css','css/600.css','css/768.css','css/992.css','css/1280.css','css/big.css'])
         .pipe(plumber())
     	.pipe(concat('main.css'))
         .pipe(gulp.dest('css'));

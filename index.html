@@ -34,7 +34,7 @@
             </ul>
           </nav>
           <nav id='nav-small'>
-            <ul>
+            <ul id='menu-small'>
               <li>Services</li>
               <li>Work</li>
               <li>About</li>
@@ -71,9 +71,9 @@
             </div>
             <div>
                 <p>Website Design</p>
-                <a href='#'>more</a>
-                <p>We offer an end to end design process that utilizes our CMS to make editing content as seemless and easy for you as possible. All sites work extremely fast on all devices</p>
-                <button class='show-description'>Get Started</button>
+                <a class='more-serve-details' onclick='showMore()'>more</a>
+                <p style="display: none;">We offer an end to end design process that utilizes our CMS to make editing content as seemless and easy for you as possible. All sites work extremely fast on any device</p>
+                <button style="display: none;" class='scroll-to-contact' onclick='scrollContact()'>Get Started</button>
           </div>
         </div>
           <div class='col-md-6'>
@@ -82,9 +82,9 @@
             </div>
             <div>
                 <p>Website Design</p>
-                <a href='#'>more</a>
-                <p>We offer an end to end design process that utilizes our CMS to make editing content as seemless and easy for you as possible. All sites work extremely fast on all devices</p>
-                <button class='show-description'>Get Started</button>
+                <a class='more-serve-details' onclick='showMore()'>more</a>
+                <p style="display: none;">We offer an end to end design process that utilizes our CMS to make editing content as seemless and easy for you as possible. All sites work extremely fast on any device</p>
+                <button style="display: none;" class='scroll-to-contact' onclick='scrollContact()'>Get Started</button>
           </div>
           </div>
         </div>
@@ -96,9 +96,9 @@
             </div>
             <div>
                 <p>Website Design</p>
-                <a href='#'>more</a>
-                <p>We offer an end to end design process that utilizes our CMS to make editing content as seemless and easy for you as possible. All sites work extremely fast on all devices</p>
-                <button class='show-description'>Get Started</button>
+                <a class='more-serve-details' onclick='showMore()'>more</a>
+                <p style="display: none;">We offer an end to end design process that utilizes our CMS to make editing content as seemless and easy for you as possible. All sites work extremely fast on any device</p>
+                <button style="display: none;" class='scroll-to-contact' onclick='scrollContact()'>Get Started</button>
           </div>
         </div>
           <div class='col-md-6'>
@@ -107,9 +107,9 @@
             </div>
             <div>
                 <p>Website Design</p>
-                <a href='#'>more</a>
-                <p>We offer an end to end design process that utilizes our CMS to make editing content as seemless and easy for you as possible. All sites work extremely fast on all devices</p>
-                <button class='show-description'>Get Started</button>
+                <a class='more-serve-details' onclick='showMore()'>more</a>
+                <p style="display: none;">We offer an end to end design process that utilizes our CMS to make editing content as seemless and easy for you as possible. All sites work extremely fast on any device</p>
+                <button style="display: none;" class='scroll-to-contact' onclick='scrollContact()'>Get Started</button>
           </div>
           </div>
         </div>
@@ -121,9 +121,9 @@
             </div>
             <div>
                 <p>Website Design</p>
-                <a href='#'>more</a>
-                <p>We offer an end to end design process that utilizes our CMS to make editing content as seemless and easy for you as possible. All sites work extremely fast on all devices</p>
-                <button class='show-description'>Get Started</button>
+                <a class='more-serve-details' onclick='showMore()'>more</a>
+                <p style="display: none;">We offer an end to end design process that utilizes our CMS to make editing content as seemless and easy for you as possible. All sites work extremely fast on any device</p>
+                <button style="display: none;" class='scroll-to-contact' onclick='scrollContact()'>Get Started</button>
           </div>
         </div>
           <div class='col-md-6'>
@@ -132,54 +132,59 @@
             </div>
             <div>
                 <p>Website Design</p>
-                <a href='#'>more</a>
-                <p>We offer an end to end design process that utilizes our CMS to make editing content as seemless and easy for you as possible. All sites work extremely fast on all devices</p>
-              
-                <button class='show-description'>Get Started</button>
+                <a class='more-serve-details' onclick='showMore()'>more</a>
+                <p style="display: none;">We offer an end to end design process that utilizes our CMS to make editing content as seemless and easy for you as possible. All sites work extremely fast on any device</p>
+                <button style="display: none;" class='scroll-to-contact' onclick='scrollContact()'>Get Started</button>
               
           </div>
           </div>
         </div>
         <!-- section how we serve -->
         <div class='get-started-wrap'>
-          <button class='scroll-to-contact'>Get Started</button>
+          <button class='scroll-to-contact' onclick='scrollContact()'>Get Started</button>
         </div>
       </div>
     </section>
     <section id="work-done">
        <h3 class='section-heading'>Work We've Done</h3>
-      <div class='content-wrapper'>
+      <div class='content-wrapper work-done-content-wrapper'>
        
         <div class='row'>
+          <div class='col-md-12'>
           <div class='col-md-4'>
-            <div class="polaroid">
+            <div class="polaroid" data-toggle="modal" data-target="#work" data-img='images/cohBig.jpg' data-live='https://constructionofhope.org/' data-title='Construction of Hope' data-description='Website build from the ground up involving responsive design, API integration, JavaScript Libraries, and image optimization. Graphic design also done using Illustrator and Photoshop. PHP secure form as well as securing the API key for the server call. Independent ground-up production.' src="images/coh.svg">
               <img class='img-responsive' src="http://placekitten.com/360/333">
-              <div class="poloroid-container">
-                <p>The Troll's tongue in Hardanger, Norway</p>
+              <div class="polaroid-container">
+                <p>Construction of Hope</p>
               </div>
             </div>
           </div>
           <div class='col-md-4'>
-            <div class="polaroid">
+            <div class="polaroid" data-toggle="modal" data-target="#work" data-img='images/cohBig.jpg' data-live='https://kevinsimonkc.com/' data-title='Construction of Hope' data-description='Website build from the ground up involving responsive design, API integration, JavaScript Libraries, and image optimization. Graphic design also done using Illustrator and Photoshop. PHP secure form as well as securing the API key for the server call. Independent ground-up production.' src="images/coh.svg">
               <img class='img-responsive' src="http://placekitten.com/360/333">
-              <div class="poloroid-container">
-                <p>The Troll's tongue in Hardanger, Norway</p>
+              <div class="polaroid-container">
+                <p>Kevin Simon</p>
               </div>
             </div>
           </div>
           <div class='col-md-4'>
-            <div class="polaroid">
+            <div class="polaroid" data-toggle="modal" data-target="#work" data-img='images/cohBig.jpg' data-live='https://carolboggess.com/' data-title='Carol Boggess' data-description='Website build from the ground up involving responsive design, API integration, JavaScript Libraries, and image optimization. Graphic design also done using Illustrator and Photoshop. PHP secure form as well as securing the API key for the server call. Independent ground-up production.' src="images/coh.svg">
               <img class='img-responsive' src="http://placekitten.com/360/333">
-              <div class="poloroid-container">
-                <p>The Troll's tongue in Hardanger, Norway</p>
+              <div class="polaroid-container">
+                <p>Carol Boggess - Author</p>
               </div>
             </div>
           </div>
-
         </div>
+        </div>
+        <!-- Hidden Content -->
+        <!-- <div id='hidden-projects-content'>
+
+
+        </div> -->
       </div>
       <div class='get-started-wrap'>
-        <a class='work-done-show-more' href='#'>See all work</a>
+        <a class='work-done-show-more' onclick="toggleWork()">See all work</a>
       </div>
     </section>
     <!-- section - our process -->
@@ -189,22 +194,38 @@
         <div class='row'>
           <div class='col-md-6'>
             <ul>
-              <li>Initial Contact</li>
-              <li>Concept Meeting</li>
-              <li>Site Build</li>
-              <li>Admin Training</li>
-              <li>Site Launch</li>
-              <li>God Glorified (Hopefully)</li>
+              <li id='init-contact' data-bind="click:displayMessage,css: {active:oneActive}">Initial Contact</li>
+              <li id='meeting' data-bind="click:displayMessage,css: {active:twoActive}">Concept Meeting</li>
+              <li id='site-build' data-bind="click:displayMessage,css: {active:threeActive}">Site Build</li>
+              <li id='training' data-bind="click:displayMessage,css: {active:fourActive}">Admin Training</li>
+              <li id='launch' data-bind="click:displayMessage,css: {active:fiveActive}">Site Launch</li>
             </ul>
           </div>
           <div class='col-md-6'>
-            <div class='process-image-wrapper'>
+            <div data-bind="if: oneActive" class='process-image-wrapper-contact'>
               <img src="http://placekitten.com/370/333">
-              <p>Sentence telling about each stage in the process and a little about why it is important.</p>
+              <p> Initial Contact Sentence telling about each stage in the process and a little about why it is important.</p>
             </div>
+            <div data-bind="if: twoActive" class='process-image-wrapper-contact'>
+              <img src="http://placekitten.com/370/333">
+              <p>Concept Meeting Sentence telling about each stage in the process and a little about why it is important.</p>
+            </div>
+            <div data-bind="if: threeActive" class='process-image-wrapper-contact'>
+              <img src="http://placekitten.com/370/333">
+              <p>Site Build Sentence telling about each stage in the process and a little about why it is important.</p>
+            </div>
+            <div data-bind="if: fourActive" class='process-image-wrapper-contact'>
+              <img src="http://placekitten.com/370/333">
+              <p>Admin Training Sentence telling about each stage in the process and a little about why it is important.</p>
+            </div>
+            <div data-bind="if: fiveActive" class='process-image-wrapper-contact'>
+              <img src="http://placekitten.com/370/333">
+              <p>Site Launch Sentence telling about each stage in the process and a little about why it is important.</p>
+            </div>
+          </div>
         </div>
         <div class='get-started-wrap'>
-          <button class='scroll-to-contact'>Get Started</button>
+          <button class='scroll-to-contact' onclick='scrollContact()'>Get Started</button>
         </div>
       </div>
     </section>
@@ -217,23 +238,23 @@
             <div class='who-we-are-pic-first'>
               <div class="polaroid">
                 <img class='img-responsive' src="http://placekitten.com/360/333">
-                <div class="poloroid-container">
+                <div class="polaroid-container">
                   <p>The Troll's tongue in Hardanger, Norway</p>
                 </div>
             </div>
-              <div>
+              <div class='who-we-are-description'>
                 <p>We are a family owned business with a desire to serve the Lord’s body with a clean conscience. Our desire is to work with our hands so that we will be in no need while free to share Christ unhindered.
                 </p>
               </div>
             </div>
             <div class='who-we-are-pic-last'>
-              <div>
+              <div class='who-we-are-description'>
                 <p>Our desire is to proliferate the Word of God through the power of the Holy Spirit. Thus we reserve the right to refuse service to any church, organization, or individual that does not agree and adhere to what we deem as non negotiables of the Christian Faith. 
                 </p><span><a href="#">Read More</a></span>
               </div>
               <div class="polaroid">
                 <img class='img-responsive' src="http://placekitten.com/360/333">
-                <div class="poloroid-container">
+                <div class="polaroid-container">
                   <p>The Troll's tongue in Hardanger, Norway</p>
                 </div>
               </div>
@@ -241,11 +262,11 @@
             <div class='who-we-are-pic-first'>
               <div class="polaroid">
                 <img class='img-responsive' src="http://placekitten.com/360/333">
-                <div class="poloroid-container">
+                <div class="polaroid-container">
                   <p>The Troll's tongue in Hardanger, Norway</p>
                 </div>
               </div>
-              <div>
+              <div class='who-we-are-description'>
                 <p>Kadosh Web Solutions exists to glorify God. We started this so as to have more freedom to preach and labor in the vineyard of the Lord. We hope to one day start a place of refuge for the outcasts and broken of society to come to receive love, forgiveness, and safety.
                 </p>
               </div>
@@ -254,7 +275,7 @@
         </div>
       </div>
       <div class='get-started-wrap'>
-        <button class='scroll-to-contact'>Get Started</button>
+        <button class='scroll-to-contact' onclick='scrollContact()'>Get Started</button>
       </div>
     </section>
     <section id="pricing">
@@ -297,12 +318,13 @@
               </div>
               <p>Domain(s)</p>
               <h4>$15 and up</h4>
+              <p>*Domains can vary in price</p>
             </div>
           </div>
         </div>
       </div>
       <div class='get-started-wrap'>
-        <button class='scroll-to-contact'>Get Started</button>
+        <button class='scroll-to-contact' onclick='scrollContact()'>Get Started</button>
       </div>
     </section>
     <section id="contact">
@@ -313,9 +335,9 @@
             <form class='CAT' action="captcha.php" method='post' id='simonForm'>
               <div class='form-group'>
               <label class='col-form-label visuallyhidden'>Name</label>
-                  <input class='form-control' id="clientname" name='clientname' data-toggle="tooltip" data-trigger='manual' required type="text" placeholder="Name" onkeyup="checkName()" autofocus>
+                  <input class='form-control' id="clientname" name='clientname' data-toggle="tooltip" data-trigger='manual' required type="text" placeholder="Name" onkeyup="//checkName()">
               <label class='col-form-label visuallyhidden'>Email</label>
-                  <input id='email-address' name='emailaddress' data-toggle="tooltip" data-trigger='manual' data-animation='true' data-placement="top" class='form-control' type="email" required placeholder="Email" autocomplete='email' onkeyup="checkEmail()">
+                  <input id='email-address' name='emailaddress' data-toggle="tooltip" data-trigger='manual' data-animation='true' data-placement="top" class='form-control' type="email" required placeholder="Email" autocomplete='email' onkeyup="//checkEmail()">
 
               <label class='col-form-label visuallyhidden'>Message</label>
                   <textarea id="event-guest" name='message' row='10' class='form-control' type="text" cols="50" rows="1" maxlength="200" required placeholder="Message"></textarea>
@@ -336,10 +358,38 @@
       <h4>KADOSH</h4>
       <p>WEB SOLUTIONS</p>
     </footer>
-
-                       
-
 </div>
+<div class="modal fade" id="work" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-parent">
+          <span><h5 class="modal-title"></h5></span>
+          <span><a id='close' class="modal-close glyphicon glyphicon-remove pull-right" data-dismiss="modal"></a></span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class='modal-img-wrap'>
+          <img class='img-responsive' src="">
+        </div>
+        <div class='row skill-description'>
+            <div class='col-sm-12'>
+              <h5>Description</h5>
+                <p class='description'></p>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+         <a class='live' href=""> <button type="button" class="btn btn-primary">Live Site</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
+<script src='js/jQuery.js'></script>
+<script src='js/bootstrap.js'></script>
+<script src='js/knockout-3.3.0.js'></script>
 <script src='js/main.js'></script>
+
 </html>

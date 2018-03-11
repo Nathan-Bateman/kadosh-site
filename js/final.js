@@ -11,6 +11,7 @@
  *
  * Date: 2013-07-03T13:30Z
  */
+ console.log('jQuery');
 (function( window, undefined ) {
 
 // Can't do this because several apps including ASP.NET trace
@@ -8833,7 +8834,7 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
  * (c) Steven Sanderson - http://knockoutjs.com/
  * License: MIT (http://www.opensource.org/licenses/mit-license.php)
  */
-
+console.log('knockout');
 (function() {(function(p){var y=this||(0,eval)("this"),w=y.document,M=y.navigator,u=y.jQuery,E=y.JSON;(function(p){"function"===typeof define&&define.amd?define(["exports","require"],p):"function"===typeof require&&"object"===typeof exports&&"object"===typeof module?p(module.exports||exports):p(y.ko={})})(function(N,O){function J(a,d){return null===a||typeof a in Q?a===d:!1}function R(a,d){var c;return function(){c||(c=setTimeout(function(){c=p;a()},d))}}function S(a,d){var c;return function(){clearTimeout(c);
 c=setTimeout(a,d)}}function K(b,d,c,e){a.d[b]={init:function(b,k,h,l,g){var m,x;a.w(function(){var q=a.a.c(k()),n=!c!==!q,r=!x;if(r||d||n!==m)r&&a.Z.oa()&&(x=a.a.la(a.e.childNodes(b),!0)),n?(r||a.e.T(b,a.a.la(x)),a.Ja(e?e(g,q):g,b)):a.e.ma(b),m=n},null,{q:b});return{controlsDescendantBindings:!0}}};a.h.ka[b]=!1;a.e.R[b]=!0}var a="undefined"!==typeof N?N:{};a.b=function(b,d){for(var c=b.split("."),e=a,f=0;f<c.length-1;f++)e=e[c[f]];e[c[c.length-1]]=d};a.D=function(a,d,c){a[d]=c};a.version="3.3.0";
 a.b("version",a.version);a.a=function(){function b(a,b){for(var c in a)a.hasOwnProperty(c)&&b(c,a[c])}function d(a,b){if(b)for(var c in b)b.hasOwnProperty(c)&&(a[c]=b[c]);return a}function c(a,b){a.__proto__=b;return a}function e(b,c,g,d){var e=b[c].match(m)||[];a.a.o(g.match(m),function(b){a.a.ga(e,b,d)});b[c]=e.join(" ")}var f={__proto__:[]}instanceof Array,k={},h={};k[M&&/Firefox\/2/i.test(M.userAgent)?"KeyboardEvent":"UIEvents"]=["keyup","keydown","keypress"];k.MouseEvents="click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave".split(" ");
@@ -8954,6 +8955,8 @@ a+" })()) }}"};this.addTemplate=function(a,b){w.write("<script type='text/html' 
  * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=ecca97d91913b01f95c5)
  * Config saved to config.json and https://gist.github.com/ecca97d91913b01f95c5
  */
+  console.log('bootstrap');
+
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
@@ -11268,3 +11271,267 @@ if (typeof jQuery === 'undefined') {
 var me = 'nathan';
 var me3 ='bateman';
 console.log(me + me3);
+
+$( document ).ready(function() {
+	$('body').scrollTop(0);
+	});
+
+//toggle text and button for "how we serve" section
+
+function showMore (event) {
+  		var target = $( this );
+  		if ( target.hasClass('more-serve-details') ) {
+    		target.nextAll().toggle();
+  		}
+  		if (target.text() === 'more') {
+  			target.text('less');
+  			target.css("font-weight"," 100");
+  		} else if (target.text() === 'less') {
+  			target.text('more'); 
+  			target.css("font-weight"," 400");		
+  		}
+}
+$( ".more-serve-details" ).click( showMore ).closest( "p" ).hide();
+
+//modal data attributes to load for all web projects
+var projectModal = $('#work').on('show.bs.modal', function (event) {
+  var imgClicked = $(event.relatedTarget); // Button that triggered the modal
+  var imgFiletoLoad = imgClicked.data('img'); // Extract info from data-* attributes
+  var description = imgClicked.data('description');
+  var skills = imgClicked.data('skills');
+  var titleToLoad = imgClicked.data('title');
+  var liveLink = imgClicked.data('live');
+  var gitLink = imgClicked.data('git');
+  var modal = $(this);
+  modal.find('.modal-title').text(titleToLoad);
+  modal.find('.modal-body .description').text(description);
+  modal.find('.modal-body .skills').text(skills);
+  modal.find('.modal-body img').attr("src",imgFiletoLoad);
+  modal.find('.modal-footer .live').attr("href",liveLink);
+  modal.find('.modal-footer .git').attr("href",gitLink);
+});
+
+
+
+
+//array of objects to get data for future projects
+
+var webProjects = [{
+						'title': 'Sample Site1',
+						'img': 'http://placekitten.com/360/333',
+						'live': 'https://constructionofhope.org/index.php',
+						'describe': 'this is the site, it speaks for itself, for better or for worse',
+						'polaroid' : 'http://placekitten.com/360/333'
+					},
+					{
+						'title': 'Sample Site2',
+						'img': 'http://placekitten.com/360/333',
+						'live': 'https://constructionofhope.org/index.php',
+						'describe': 'this is the site, it speaks for itself, for better or for worse',
+						'polaroid' : 'http://placekitten.com/360/333'
+					},
+					{
+						'title': 'Sample Site3',
+						'img': 'http://placekitten.com/360/333',
+						'live': 'https://constructionofhope.org/index.php',
+						'describe': 'this is the site, it speaks for itself, for better or for worse',
+						'polaroid' : 'http://placekitten.com/360/333'
+					},
+					{
+						'title': 'Sample Site4',
+						'img': 'http://placekitten.com/360/333',
+						'live': 'https://constructionofhope.org/index.php',
+						'describe': 'this is the site, it speaks for itself, for better or for worse',
+						'polaroid' : 'http://placekitten.com/360/333'
+					},
+					{
+						'title': 'Sample Site5',
+						'img': 'http://placekitten.com/360/333',
+						'live': 'https://constructionofhope.org/index.php',
+						'describe': 'this is the site, it speaks for itself, for better or for worse',
+						'polaroid' : 'http://placekitten.com/360/333'
+					},
+					{
+						'title': 'Sample Site6',
+						'img': 'http://placekitten.com/360/333',
+						'live': 'https://constructionofhope.org/index.php',
+						'describe': 'this is the site, it speaks for itself, for better or for worse',
+						'polaroid' : 'http://placekitten.com/360/333'
+					},
+					{
+						'title': 'Sample Site7',
+						'img': 'http://placekitten.com/360/333',
+						'live': 'https://constructionofhope.org/index.php',
+						'describe': 'this is the site, it speaks for itself, for better or for worse',
+						'polaroid' : 'http://placekitten.com/360/333'
+					},
+					{
+						'title': 'Sample Site8',
+						'img': 'http://placekitten.com/360/333',
+						'live': 'https://constructionofhope.org/index.php',
+						'describe': 'this is the site, it speaks for itself, for better or for worse',
+						'polaroid' : 'http://placekitten.com/360/333'
+					},
+					{
+						'title': 'Sample Site9',
+						'img': 'http://placekitten.com/360/333',
+						'live': 'https://constructionofhope.org/index.php',
+						'describe': 'this is the site, it speaks for itself, for better or for worse',
+						'polaroid' : 'http://placekitten.com/360/333'
+					},
+					{
+						'title': 'Sample Site10',
+						'img': 'http://placekitten.com/360/333',
+						'live': 'https://constructionofhope.org/index.php',
+						'describe': 'this is the site, it speaks for itself, for better or for worse',
+						'polaroid' : 'http://placekitten.com/360/333'
+					},
+					{
+						'title': 'Sample Site11',
+						'img': 'http://placekitten.com/360/333',
+						'live': 'https://constructionofhope.org/index.php',
+						'describe': 'this is the site, it speaks for itself, for better or for worse',
+						'polaroid' : 'http://placekitten.com/360/333'
+					},
+					{
+						'title': 'Sample Site12',
+						'img': 'http://placekitten.com/360/333',
+						'live': 'https://constructionofhope.org/index.php',
+						'describe': 'this is the site, it speaks for itself, for better or for worse',
+						'polaroid' : 'http://placekitten.com/360/333'
+					}];
+//post all the projects
+
+function postProjects () {
+	var openRowCol12 = '<div class="row"><div class="col-md-12">';
+	var closeRowCol12 = '</div></div>';
+	var $postDivs = $('.work-done-content-wrapper');
+	for (var i = 0; i < webProjects.length; i++) {
+		var count = i;
+		var project = webProjects[i];
+		var projectTitle = project.title;
+		var projectImg = project.img;
+		var projectLive = project.live;
+		var projectDescribe = project.describe;
+		var projectPolaroid = project.polaroid;
+		
+		var projectMarkup = '<div class="col-md-4">' +
+							'<div class="polaroid" data-toggle="modal" data-target="#work"' +
+							' data-img="' + projectImg +'"' +
+							' data-live="' + projectLive + '"' +
+							' data-title="' + projectTitle + '"' +
+							' data-description="' + projectDescribe + '">' +
+							' <img class="img-responsive" src="' + projectPolaroid + '">' +
+							' <div class="polaroid-container">' +
+							' <p>' + projectTitle + '</p></div></div></div>';
+
+			if (count % 3 === 0 && count !=0) {
+	                    $postDivs.append(closeRowCol12);
+	                }
+	           
+	                if (count % 3 === 0) {
+	                    var openRowCol = '<div class="row"><div class="col-md-12 child-row hide visually-hide' + ' row-'+ count +'">';
+	                    var classToString = '.row-' + count.toString();
+	                    $postDivs.append(openRowCol);
+	                    //var $postChildren = $( "div" ).closest( classToString, $postDivs ); 
+	                    var $postChildren = $(classToString); 
+	                    //$postChildren.append(projectMarkup);  
+	                }  
+
+	            $(projectMarkup).appendTo($postChildren);
+	            //$postChildren.append(projectMarkup);
+
+	                if (count === webProjects.length - 1) {
+	                        $postDivs.append(closeRowCol12);
+	                    }
+	}	
+}
+
+//toggle all projects on user click
+function toggleWork () {
+	let allProjects = $('.child-row');
+	if (allProjects.hasClass( "hide" )) {
+		allProjects.removeClass('hide');
+		setTimeout(function () {
+      		allProjects.removeClass('visually-hide');
+    	}, 100);
+    	$('html, body').animate({
+        	scrollTop: '+=380px'
+    	}, 1500);
+    	$('.work-done-show-more').text("See less work");
+	} else {
+		
+		setTimeout(function () {
+      		allProjects.addClass('hide');
+    	}, 1650);
+      	allProjects.addClass('visually-hide');
+      		$('html, body').animate({
+        	scrollTop: $("#work-done").offset().top
+    	}, 1500);
+      	$('.work-done-show-more').text("See all work");
+
+	}
+}
+
+function scrollContact () {
+	$('html, body').animate({
+	    scrollTop: ($('#contact').offset().top)
+	},500);
+}
+
+var kadoshViewModel = function () {
+	var self = this;
+		self.oneActive = ko.observable(true);
+		self.twoActive = ko.observable(false);
+		self.threeActive = ko.observable(false);
+		self.fourActive = ko.observable(false);
+		self.fiveActive = ko.observable(false);
+	self.displayMessage = function (data, event) {
+		var clickedId = event.target.id;
+		
+		if (clickedId === 'init-contact') {
+			console.log(clickedId);	
+			self.oneActive(true);
+			self.twoActive(false);
+			self.threeActive(false);
+			self.fourActive(false);
+			self.fiveActive(false);
+		} else if(clickedId === 'meeting') {
+			console.log(clickedId);	
+			self.oneActive(false);
+			self.twoActive(true);
+			self.threeActive(false);
+			self.fourActive(false);
+			self.fiveActive(false);
+
+		} else if(clickedId === 'site-build') {
+			console.log(clickedId);	
+			self.oneActive(false);
+			self.twoActive(false);
+			self.threeActive(true);
+			self.fourActive(false);
+			self.fiveActive(false);
+			
+		} else if(clickedId === 'training') {
+			console.log(clickedId);	
+			self.oneActive(false);
+			self.twoActive(false);
+			self.threeActive(false);
+			self.fourActive(true);
+			self.fiveActive(false);
+			
+		} else if(clickedId === 'launch') {
+			console.log(clickedId);	
+			self.oneActive(false);
+			self.twoActive(false);
+			self.threeActive(false);
+			self.fourActive(false);
+			self.fiveActive(true);
+			
+		}
+	};
+
+
+	}
+postProjects();
+ko.applyBindings(new kadoshViewModel());	

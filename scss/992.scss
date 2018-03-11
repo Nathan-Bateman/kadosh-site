@@ -16,4 +16,28 @@
 			   
 		}
 	}
+	#process {
+
+		.content-wrapper {
+			ul {
+				display: block;
+				padding-left: 140px;
+			    
+				li {
+					cursor: default;
+					font-weight: 100;
+					margin-bottom: 30px;
+				}
+				li:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.active {
+			font-weight: 500 !important;
+		}
+		.inactive {
+			font-weight: 100;
+		}
+	}
 }

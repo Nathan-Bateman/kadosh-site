@@ -11,6 +11,7 @@
  *
  * Date: 2013-07-03T13:30Z
  */
+ console.log('jQuery');
 (function( window, undefined ) {
 
 // Can't do this because several apps including ASP.NET trace
